@@ -1,0 +1,16 @@
+<p-panel>
+    <p-header>
+      Stock details
+    </p-header>
+    <div class="p-d-flex" *ngIf="stock">
+      <div class="p-m-4">Name: {{stock.name}}</div>
+      <div class="p-m-4">Price: {{stock.price}}</div>
+      <div class="p-m-4">PriceDate: {{stock.priceDate}}</div>
+      <div class="p-m-4">PriceTime: {{stock.priceTime}}</div>
+      
+    </div>
+    <p-footer>
+      <a [routerLink]="goBackUrl">Go back</a>
+    </p-footer>
+  </p-panel>
+  

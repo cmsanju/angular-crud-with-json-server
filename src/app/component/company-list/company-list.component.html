@@ -1,0 +1,46 @@
+<p-toast></p-toast>
+
+<p-toolbar styleClass="p-mb-4">
+  <ng-template pTemplate="left">
+    <button pButton pRipple label="New Company" icon="pi pi-plus" class="p-button-success p-mr-2"
+            (click)="openCreateModal()"></button>
+            
+  </ng-template>
+</p-toolbar>
+
+<!--Table-->
+<p-table [value]="companies" [(selection)]="selectedCompany" selectionMode="single" (onRowSelect)="onRowSelect($event)" datatable class="row-border hover">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Code</th>
+      <th>Turnover</th>
+      <th>CEO</th>
+      <th>Directors</th>
+      <th>ExchangeNames</th>
+      <th>SectorName</th>
+      <th>Description</th>
+      <th></th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-company>
+    <tr [pSelectableRow]="company">
+       <td>{{company.id}}</td>
+      <td>{{company.name}}</td>
+      <td>{{company.code}}</td>
+      <td>{{company.turnover}}</td>
+      <td>{{company.ceo}}</td>
+      <td>{{company.boardOfDirectors}}</td>
+      <td>{{company.stockExchangeNames}}</td>
+      <td>{{company.sectorName}}</td>
+      <td>{{company.description}}</td>
+      <td>
+        <button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success p-mr-2"
+                (click)="openEditModal(company)"></button>
+        <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-danger"
+                (click)="deleteCompany(company)"></button>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>

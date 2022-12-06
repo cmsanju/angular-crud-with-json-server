@@ -1,0 +1,60 @@
+{
+  "companies": [
+    {
+      "id": "2",
+      "name": "EY",
+      "code": "E123",
+      "turnover": "2341",
+      "ceo": "Sanjeev",
+      "boardOfDirectors": "Sanjeev",
+      "stockExchangeNames": "EYS",
+      "sectorName": "INDIA",
+      "description": "EY DETAILS CHANGES"
+    },
+    {
+      "id": "2",
+      "name": "PWC",
+      "code": "P123",
+      "turnover": "3212",
+      "ceo": "NANA",
+      "boardOfDirectors": "NANA",
+      "stockExchangeNames": "PWCS",
+      "sectorName": "INDIA",
+      "description": "PWC STOCKS"
+    },
+    {
+      "id": "5",
+      "name": "apple",
+      "code": "A23",
+      "turnover": "5336",
+      "ceo": "ASteve",
+      "boardOfDirectors": "Sanju",
+      "stockExchangeNames": "APLD",
+      "sectorName": "USA",
+      "description": "APPLE STOCKS"
+    }
+  ],
+  "stocks": [
+    {
+      "id": "1",
+      "name": "BOSCH",
+      "price": "756",
+      "priceDate": "Fri Dec 08 2019",
+      "priceTime": "07:25"
+    },
+    {
+      "id": "3",
+      "name": "GMS",
+      "price": "650",
+      "priceDate": "Mon Dec 05 2022",
+      "priceTime": "15:50"
+    },
+    {
+      "id": "5",
+      "name": "APPLE USA",
+      "price": "739",
+      "priceDate": "Tue Dec 06 2021",
+      "priceTime": "11:35"
+    }
+  ]
+}

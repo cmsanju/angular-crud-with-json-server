@@ -1,0 +1,18 @@
+<p-panel>
+  <p-header>
+    Company details
+  </p-header>
+  <div class="p-d-flex" *ngIf="company">
+    <div class="p-m-4">Company Name: {{company.name}}</div>
+    <div class="p-m-4">Code: {{company.code}}</div>
+    <div class="p-m-4">Turnover: {{company.turnover}}</div>
+    <div class="p-m-4">CEO: {{company.ceo}}</div>
+    <div class="p-m-4">Directors: {{company.boardOfDirectors}}</div>
+    <div class="p-m-4">ExchangeNames: {{company.stockExchangeNames}}</div>
+    <div class="p-m-4">SectorName: {{company.sectorName}}</div>
+    <div class="p-m-4">Description: {{company.description}}</div>
+  </div>
+  <p-footer>
+    <a [routerLink]="goBackUrl">Go back</a>
+  </p-footer>
+</p-panel>
